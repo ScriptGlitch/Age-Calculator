@@ -1,0 +1,760 @@
+:root {
+  --theme-color: #ff0040;
+  --text-color: #fff;
+  --border-primary: #5353534c;
+  --border-secondary: #535353;
+  --bg-1: #00000080;
+  --bg-2: #2424243d;
+  --bg-3: #000000;
+  --input-border: #53535380;
+  --input-background: #00000034;
+  --input-placeholder: #cbd1dc;
+  --input-border-focus: #ff0040;
+  --input-color: var(--text-color);
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #2424243d;
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #ff0040;
+}
+* {
+  box-sizing: border-box;
+}
+.containerX {
+  border: 2px dashed var(--border-secondary);
+  padding: 20px 10px;
+  border-radius: 0px;
+  margin: auto;
+  color: var(--text-color);
+  background-color: var(--bg-1);
+}
+.input-container {
+  margin-bottom: 10px;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+label {
+  color: #b8b8b8;
+  font-size: 15px;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+p {
+  margin-top: -5px;
+  margin-bottom: 0px;
+}
+.button-Ka {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease-in-out;
+}
+.result-container {
+  display: none;
+  margin-top: 20px;
+  padding: 0px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+.result-table-1-Your-Age {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: var(--text-color);
+  border: 2px dashed var(--border-secondary);
+}
+.result-table-1-Your-Age th,
+.result-table-1-Your-Age td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--border-primary);
+}
+.result-table-1-Your-Age th {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  background-color: var(--theme-color);
+  border: 2px solid var(--theme-color);
+}
+.result-table-1-Your-Age td:first-child {
+  width: 35%;
+}
+.result-table-1-Your-Age td:last-child {
+  width: 65%;
+}
+.result-table-1-Your-Age tr:nth-child(even) td {
+  background: var(--bg-2);
+}
+.result-table-1-Your-Age tr:nth-child(odd) td {
+  background: var(--bg-1);
+}
+.result-table-2-Cool-Facts {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: var(--text-color);
+  border: 2px dashed var(--border-secondary);
+}
+.result-table-2-Cool-Facts th,
+.result-table-2-Cool-Facts td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--border-primary);
+}
+.result-table-2-Cool-Facts th {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  background-color: var(--theme-color);
+  border: 2px solid var(--theme-color);
+}
+.result-table-2-Cool-Facts td:first-child {
+  width: 52%;
+}
+.result-table-2-Cool-Facts td:last-child {
+  width: 48%;
+}
+.result-table-2-Cool-Facts tr:nth-child(even) td {
+  background: var(--bg-2);
+}
+.result-table-2-Cool-Facts tr:nth-child(odd) td {
+  background: var(--bg-1);
+}
+.nextBirthdayCell {
+  background-color: #00ff6249 !important;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../../../Images/anime-1.jpg") !important;
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
+}
+.result-table-3-Milestones {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: var(--text-color);
+  border: 2px dashed var(--border-secondary);
+}
+.result-table-3-Milestones th,
+.result-table-3-Milestones td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--border-primary);
+}
+.result-table-3-Milestones th {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  background-color: var(--theme-color);
+  border: 2px solid var(--theme-color);
+}
+.result-table-3-Milestones td:first-child {
+  width: 50%;
+}
+.result-table-3-Milestones td:last-child {
+  width: 50%;
+}
+.result-table-3-Milestones tr:nth-child(even) td {
+  background: var(--bg-2);
+}
+.result-table-3-Milestones tr:nth-child(odd) td {
+  background: var(--bg-1);
+}
+.result-table-4-Other-Planets {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: var(--text-color);
+  border: 2px dashed var(--border-secondary);
+}
+.result-table-4-Other-Planets th,
+.result-table-4-Other-Planets td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--border-primary);
+}
+.result-table-4-Other-Planets th {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  background-color: var(--theme-color);
+  border: 2px solid var(--theme-color);
+}
+.result-table-4-Other-Planets td:first-child {
+  width: 52%;
+}
+.result-table-4-Other-Planets td:last-child {
+  width: 48%;
+}
+.result-table-4-Other-Planets tr:nth-child(even) td {
+  background: var(--bg-2);
+}
+.result-table-4-Other-Planets tr:nth-child(odd) td {
+  background: var(--bg-1);
+}
+.result-table-5-Animal-Years {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: var(--text-color);
+  border: 2px dashed var(--border-secondary);
+}
+.result-table-5-Animal-Years th,
+.result-table-5-Animal-Years td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--border-primary);
+}
+.result-table-5-Animal-Years th {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  background-color: var(--theme-color);
+  border: 2px solid var(--theme-color);
+}
+.result-table-5-Animal-Years td:first-child {
+  width: 52%;
+}
+.result-table-5-Animal-Years td:last-child {
+  width: 48%;
+}
+.result-table-5-Animal-Years tr:nth-child(even) td {
+  background: var(--bg-2);
+}
+.result-table-5-Animal-Years tr:nth-child(odd) td {
+  background: var(--bg-1);
+}
+.result-table-6-Zodiac {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: var(--text-color);
+  border: 2px dashed var(--border-secondary);
+}
+.result-table-6-Zodiac th,
+.result-table-6-Zodiac td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--border-primary);
+}
+.result-table-6-Zodiac th {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  background-color: var(--theme-color);
+  border: 2px solid var(--theme-color);
+}
+.result-table-6-Zodiac td:first-child {
+  width: 52%;
+}
+.result-table-6-Zodiac td:last-child {
+  width: 48%;
+}
+.result-table-6-Zodiac tr:nth-child(even) td {
+  background: var(--bg-2);
+}
+.result-table-6-Zodiac tr:nth-child(odd) td {
+  background: var(--bg-1);
+}
+.result-table-6-Zodiac .zodiacDetails {
+  text-align: justify;
+}
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  -webkit-appearance: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border 0.3s ease;
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--input-border-focus);
+  }
+}
+.form-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  & > span,
+  .form-field {
+    white-space: nowrap;
+    display: block;
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+    &:first-child {
+      border-radius: 0;
+    }
+    &:last-child {
+      border-radius: 0;
+    }
+    &:not(:first-child) {
+      margin-left: -1px;
+    }
+  }
+  .form-field {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .form-field::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    font-size: 40px;
+    pointer-events: all;
+  }
+  & > span {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--group-color);
+    background: var(--group-background);
+    border: 1px solid var(--group-border);
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  }
+  &:focus-within {
+    & > span {
+      color: var(--group-color-focus);
+      background: var(--group-background-focus);
+      border-color: var(--group-border-focus);
+    }
+  }
+}
+.calendar-icon,
+.clock-icon {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  width: 45px;
+  height: 44px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #fff;
+  font-size: 10px;
+}
+.clock-icon {
+  font-size: 16px;
+  top: 50%;
+  width: 45px;
+  height: 43px;
+  line-height: 30px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  height: auto;
+  background-color: var(--bg-3);
+  border: 1px solid var(--theme-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 125%;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--theme-color) transparent transparent transparent;
+}
+.tooltip-zodiac {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.tooltip-zodiac .tooltiptext-zodiac {
+  font-family: "Hind Siliguri", sans-serif;
+  visibility: hidden;
+  width: 600px;
+  height: auto;
+  background-color: var(--bg-3);
+  border: 1px solid var(--theme-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  left: 300px;
+  transform: translateX(-50%);
+  bottom: 125%;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.tooltip-zodiac:hover .tooltiptext-zodiac {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip-zodiac .tooltiptext-zodiac::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -3000px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--theme-color) transparent transparent transparent;
+}
+.button-Ka {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  position: relative;
+  width: 150px;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 3px;
+  padding-left: 35px;
+  box-shadow: 2.9px 2.9px 2.2px rgba(0, 0, 0, 0.019),
+    5.2px 5.2px 5.3px rgba(0, 0, 0, 0.023), 7px 7px 10px rgba(0, 0, 0, 0.025),
+    8.7px 8.7px 17.9px rgba(0, 0, 0, 0.024),
+    11.3px 11.3px 33.4px rgba(0, 0, 0, 0.023),
+    20px 20px 80px rgba(0, 0, 0, 0.02);
+}
+.pika {
+  position: absolute;
+  top: -130%;
+  left: 46%;
+  height: 60px;
+  transition: 0.5s all;
+  animation: tilt 1.1s infinite ease-in-out;
+}
+@keyframes tilt {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+.pokeball {
+  position: absolute;
+  top: 18%;
+  left: 41%;
+  animation: rotate_4991 1s linear infinite;
+}
+@keyframes rotate_4991 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button-Ka:focus .pika {
+  top: 70%;
+}
+.button-Ka:focus .pokeball {
+  animation: none;
+  transform: scale(0);
+}
+.button-Ka:focus .go {
+  color: transparent;
+}
+.go {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.pword,
+.pword2 {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-size: 20px;
+  opacity: 0;
+  animation: pulse-animation_0011 1s infinite;
+}
+@keyframes pulse-animation_0011 {
+  0% {
+    transform: rotateZ(-30deg) scale(1);
+  }
+  50% {
+    transform: rotateZ(-30deg) scale(1.1);
+  }
+  100% {
+    transform: rotateZ(-30deg) scale(1);
+  }
+}
+.pword {
+  top: 9%;
+  left: 50%;
+}
+.pword2 {
+  top: 29%;
+  left: 52%;
+}
+.button-Ka:focus .pword,
+.button-Ka:focus .pword2 {
+  opacity: 1;
+}
+.button-Ka {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  position: relative;
+  width: 150px;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 3px;
+  padding-left: 35px;
+  box-shadow: 2.9px 2.9px 2.2px rgba(0, 0, 0, 0.019),
+    5.2px 5.2px 5.3px rgba(0, 0, 0, 0.023), 7px 7px 10px rgba(0, 0, 0, 0.025),
+    8.7px 8.7px 17.9px rgba(0, 0, 0, 0.024),
+    11.3px 11.3px 33.4px rgba(0, 0, 0, 0.023),
+    20px 20px 80px rgba(0, 0, 0, 0.02);
+}
+.pika {
+  position: absolute;
+  top: -130%;
+  left: 46%;
+  height: 60px;
+  transition: 0.5s all;
+  animation: tilt 1.1s infinite ease-in-out;
+}
+@keyframes tilt {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+.pokeball {
+  position: absolute;
+  top: 18%;
+  left: 41%;
+  animation: rotate_4991 1s linear infinite;
+}
+@keyframes rotate_4991 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button-Ka:focus .pika {
+  top: 70%;
+}
+.button-Ka:focus .pokeball {
+  animation: none;
+  transform: scale(0);
+}
+.button-Ka:focus .go {
+  color: transparent;
+}
+.go {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.pword,
+.pword2 {
+  font-family: "Satisfy", cursive, "Hind Siliguri", sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-size: 20px;
+  opacity: 0;
+  animation: pulse-animation_0011 1s infinite;
+}
+@keyframes pulse-animation_0011 {
+  0% {
+    transform: rotateZ(-30deg) scale(1);
+  }
+  50% {
+    transform: rotateZ(-30deg) scale(1.1);
+  }
+  100% {
+    transform: rotateZ(-30deg) scale(1);
+  }
+}
+.pword {
+  top: 9%;
+  left: 50%;
+}
+.pword2 {
+  top: 29%;
+  left: 52%;
+}
+.button-Ka:focus .pword,
+.button-Ka:focus .pword2 {
+  opacity: 1;
+}
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--border-secondary);
+  padding: 20px;
+  gap: 20px;
+  margin-top: 18px;
+}
+.chart-title {
+  flex: 1;
+  max-width: 500px;
+  font-size: 16px;
+  text-align: center;
+}
+.chart-title p {
+  font-size: 13px;
+  font-style: italic;
+  color: #b2b2b2;
+}
+.chart {
+  flex: 2;
+  max-width: 600px;
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 20vh;
+  }
+  .tooltip .tooltiptext {
+    width: 300px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    bottom: auto;
+  }
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -500px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--theme-color) transparent transparent transparent;
+  }
+  .tooltip-zodiac .tooltiptext-zodiac {
+    width: 300px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    bottom: auto;
+  }
+  .tooltip-zodiac .tooltiptext-zodiac::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -500px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--theme-color) transparent transparent transparent;
+  }
+  .pokeball {
+    position: absolute;
+    top: 17%;
+    left: 30%;
+    animation: rotate_4991 1s linear infinite;
+  }
+  .go {
+    position: absolute;
+    top: 22%;
+    left: 42%;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .pword,
+  .pword2 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 15px;
+    opacity: 0;
+    animation: pulse-animation_0011 1s infinite;
+  }
+  @keyframes pulse-animation_0011 {
+    0% {
+      transform: rotateZ(-30deg) scale(1);
+    }
+    50% {
+      transform: rotateZ(-30deg) scale(1.1);
+    }
+    100% {
+      transform: rotateZ(-30deg) scale(1);
+    }
+  }
+  .pword {
+    top: 23%;
+    left: 54%;
+  }
+  .pword2 {
+    top: 43%;
+    left: 56%;
+  }
+  .button-Ka:focus .pword,
+  .button-Ka:focus .pword2 {
+    opacity: 1;
+  }
+  .chart-title,
+  .chart {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .chart-title {
+    text-align: center;
+  }
+}
